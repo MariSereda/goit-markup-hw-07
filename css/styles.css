@@ -82,7 +82,7 @@ img {
   background-color: var(--accent-dark-color);
 }
 
-.section-header {
+.section__heading {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -276,16 +276,16 @@ img {
 
 /* Activities styles */
 
-.activities-list {
+.activities__list {
   display: flex;
   justify-content: space-between;
 }
 
-.activities-item a {
+.activities__link {
   position: relative;
 }
 
-.activities-item p {
+.activities__text {
   position: absolute;
   bottom: 0;
   left: 0;
