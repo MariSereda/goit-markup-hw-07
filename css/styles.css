@@ -240,11 +240,11 @@ img {
   padding-bottom: 0;
 }
 
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-list li:not(:first-child) {
+.features__item:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -259,7 +259,7 @@ img {
   background-color: var(--light-bg-color);
 }
 
-.features-list h3 {
+.features__heading {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -268,7 +268,7 @@ img {
   text-transform: uppercase;
 }
 
-.features-list p {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-color);
