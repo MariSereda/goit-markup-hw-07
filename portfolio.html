@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+          <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студия</a>
@@ -64,23 +64,31 @@
         <div class="container">
           <!-- Filter -->
 
-          <ul class="portfolio__filter">
-            <li>
+          <ul class="filter portfolio__filter">
+            <li class="filter__item">
               <button class="filter__button filter__button--current" type="button">Все</button>
             </li>
-            <li><button class="filter__button" type="button">Веб-сайты</button></li>
-            <li><button class="filter__button" type="button">Приложения</button></li>
-            <li><button class="filter__button" type="button">Дизайн</button></li>
-            <li><button class="filter__button" type="button">Маркетинг</button></li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
+            </li>
           </ul>
 
           <!-- Portfolio -->
           <!-- Технокряк -->
           <ul class="portfolio__list">
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -99,10 +107,10 @@
               </a>
             </li>
             <!-- Постер New Orlean -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -121,10 +129,10 @@
               </a>
             </li>
             <!-- Ресторан Seafood -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -143,10 +151,10 @@
               </a>
             </li>
             <!-- Проект Prime -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -165,10 +173,10 @@
               </a>
             </li>
             <!-- Проект Boxes -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -187,10 +195,10 @@
               </a>
             </li>
             <!-- Inspiration has no Borders -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -209,10 +217,10 @@
               </a>
             </li>
             <!-- Издание Limited Edition -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -231,10 +239,10 @@
               </a>
             </li>
             <!-- Проект LAB -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -248,10 +256,10 @@
               </a>
             </li>
             <!-- Growing Business -->
-            <li class="portfolio__card">
+            <li class="card portfolio__card">
               <a class="card__link" href="">
                 <div class="card__overlay">
-                  <p class="overlay__paragraph">
+                  <p class="card__overlay-paragraph">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -279,8 +287,8 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="address">
-          <a class="logo footer__logo" href="./index.html"
-            ><span class="logo--accent">Web</span>Studio</a
+          <a class="logo logo--white footer__logo" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <address>
             <ul class="address__list">
@@ -300,31 +308,31 @@
         </div>
         <div class="footer__icon-wrapper">
           <p class="footer__paragraph">Присоединяйтесь</p>
-          <ul class="icon__list">
-            <li class="icon__item">
-              <a class="icon__link icon__link--dark" href="">
-                <svg class="icon__social" width="20" height="20">
+          <ul class="icons">
+            <li class="icons__item icons__item--round">
+              <a class="icons__link icons__link--round icons__link--dark" href="">
+                <svg class="icons__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon__item">
-              <a class="icon__link icon__link--dark" href="">
-                <svg class="icon__social" width="20" height="20">
+            <li class="icons__item icons__item--round">
+              <a class="icons__link icons__link--round icons__link--dark" href="">
+                <svg class="icons__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon__item">
-              <a class="icon__link icon__link--dark" href="">
-                <svg class="icon__social" width="20" height="20">
+            <li class="icons__item icons__item--round">
+              <a class="icons__link icons__link--round icons__link--dark" href="">
+                <svg class="icons__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon__item">
-              <a class="icon__link icon__link--dark" href="">
-                <svg class="icon__social" width="20" height="20">
+            <li class="icons__item icons__item--round">
+              <a class="icons__link icons__link--round icons__link--dark" href="">
+                <svg class="icons__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -344,7 +352,7 @@
           />
           <button class="button footer__button" type="submit">
             Подписаться
-            <svg class="icon__send" width="24" height="24">
+            <svg class="button__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
