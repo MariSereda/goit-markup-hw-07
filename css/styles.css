@@ -409,23 +409,23 @@ p {
 
 /* Portfolio section */
 
-.portfolio h1 {
+.portfolio__heading {
   display: none;
 }
 
 /* Filter styles */
 
-.filter {
+.portfolio__filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter :not(:first-child) {
+.portfolio__filter :not(:first-child) {
   margin-left: 8px;
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -444,9 +444,9 @@ p {
     box-shadow var(--transion-values);
 }
 
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.current {
+.filter__button:hover,
+.filter__button:focus,
+.filter__button--current {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -455,14 +455,14 @@ p {
 
 /* Portfolio styles */
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--portfolio-item-gap));
   margin-left: calc(-1 * var(--portfolio-item-gap));
 }
 
-.portfolio-item {
+.portfolio__card {
   flex-basis: calc (100%/3 - var(--portfolio-item-gap));
   margin-top: var(--portfolio-item-gap);
   margin-left: var(--portfolio-item-gap);
@@ -471,29 +471,29 @@ p {
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-item a {
+.card__link {
   transition: box-shadow var(--transion-values);
 }
 
-.portfolio-item a:hover,
-.portfolio-item a:focus {
+.card__link:hover,
+.card__link:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item a:hover .portfolio-overlay p,
-.portfolio-item a:focus .portfolio-overlay p {
+.card__link:hover .overlay__paragraph,
+.card__link:focus .overlay__paragraph {
   transform: translateY(0);
   opacity: 1;
 }
 
-.portfolio-overlay {
+.card__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overlay p {
+.overlay__paragraph {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -514,13 +514,13 @@ p {
   transition: transform var(--transion-values), opacity var(--transion-values);
 }
 
-.portfolio-descriptions {
+.card__descriptions {
   padding: 20px 24px;
   /* border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee; */
 }
 
-.portfolio-descriptions h2 {
+.card__heading {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -531,7 +531,7 @@ p {
   color: var(--primary-color);
 }
 
-.portfolio-descriptions p {
+.card__paragraph {
   font-size: 16px;
   line-height: 1.88;
 
